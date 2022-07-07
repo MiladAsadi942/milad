@@ -1,0 +1,934 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(font-farsi/Sans\ a4fran3.woff) format('woff');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Fresca;
+    
+    
+    
+}
+.bestP h1{
+    color: rgb(48, 177, 43);
+}
+.continer{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    
+    padding: 0 5%;
+    transition: all 1s;
+    z-index: 30;
+    font-family: Fresca;
+}
+
+header .logo{
+    width: 6%;
+    border-radius: 50%;
+    margin-top: 0.4%;
+}
+
+header .logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+header nav{
+    display: flex;
+    width: 80%;
+    text-align: right;
+    padding: 1%;
+    height: 100%;
+    justify-content: space-between;
+}
+header nav ul li{
+    display: inline;
+    list-style: none;
+    color: gray;
+}
+header nav ul li a{
+    color: rgb(119, 116, 116);
+    text-decoration: none;
+    margin: 0 2%;
+    font-size: 18px;
+}
+
+.search{
+    width: 50%;
+    display: flex;
+    
+}
+.search input{
+    width: 87%;
+    border: 0;
+    padding: 0 2%;
+    outline: 0;
+    font-size: 21px;
+    color: gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: gainsboro;
+}
+.search button{
+    width: 13%;
+    padding: 0.2 0;
+    border: 0;
+    background: rgb(206, 202, 202);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav ul{
+    width: 50%;
+    margin-top: 1.6%;
+}
+
+/* Slider Tital */
+.slider{
+    width: 100%;
+    font-family: Fresca;
+}
+.slider #carouselExampleCaptions img{
+   height: 90vh;
+}
+/* Tree Product */
+.product{
+    width: 95%;
+    height: 100%;
+    padding: 2% 0;
+    border: 1px solid gainsboro;
+    margin: 2% auto;
+    border-radius: 10px;
+    font-family: Fresca;
+}
+.product .card{
+    border-radius: 10px;
+    padding: 1% 1%;
+}
+.product .card img{
+    transition: all 0.5s;
+}
+.anim{
+    color : rgb(54, 199, 35);
+}
+.product .card{
+    width: 27%;
+    margin: 2% 3%;
+    overflow: hidden;
+    background: gainsboro;
+    
+}
+.product .card img:hover{
+    transform: scale(1.1);
+}
+
+.Product1{
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 1% 0;
+    
+}
+.tab-pane{
+    width: 100%;
+    padding: 5% 20%;
+
+}
+.tab-content{
+    box-shadow: 10px 5px 10px;
+}
+.tab-pane img{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.2) , 10px 5px 10px rgba(0,0,0,0.3) ,5px 5px 10px rgba(0,0,0,0.2) ;
+}
+.bestP{
+    text-align: center;
+    padding: 5% 0;
+}
+.bestP h2{
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.4%;
+    display: inline;
+
+}
+
+/* Product1 */
+
+#myTab{
+    width: 100%;
+    padding: 0 2%;
+    box-shadow: 10px 5px 10px gray;
+    border-radius: 10px;
+    text-align: center;
+    
+    
+}
+
+
+.product1{
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+    border: 1px solid gainsboro;
+    width: 95%;
+    margin: 2% auto;
+    border-radius: 10px;
+}
+/* .product1{
+    padding: 0 10%;
+} */
+
+/* Product Sliders  */
+
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide .card{
+        overflow: hidden;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+      }
+      .swiper-slide img:hover{
+    transform: scale(1.1);
+      }
+
+
+/* Section 3 */
+
+
+      .Product2{
+        padding: 1% 0;
+        box-shadow: 10px 5px 10px gray;
+        width: 95%;
+        margin: 2% auto;
+        border: 1px solid gainsboro;
+        padding-bottom: 2%;
+        border-radius: 10px;
+      }
+      .Towimg{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+      }
+
+      .Towimg .one{
+          width: 60%;
+          height: 100%;
+          margin-top: 2%;
+      }
+
+      .Towimg .tow{
+        width: 30%;
+        height: 100%;
+        color: black;
+      }
+      .Towimg .tow h5 , p{
+        color: black;
+      }
+     
+.Towimg .tow .PTow{
+    margin: 2% 0;
+}
+.Product4{
+    height: 100%;
+    padding: 0 0;
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid gainsboro;
+    padding-bottom: 2%;
+    border-radius: 10px
+}
+.Product4 .Towimg .one{
+    overflow: hidden;
+    background: gainsboro;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    
+}
+.Product4 .Towimg .tow{
+    overflow: hidden;
+    
+}
+.Product4 .Towimg .one img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.Product4 .Towimg .tow img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.Product4 .Towimg .one:hover img{
+   transform: scale(1.1);
+} 
+.Product4 .Towimg .one .card:hover h5{
+    margin-top: 45%;
+    
+}
+.Product4 .Towimg .one .card{
+    transition: all 0.5s;
+    padding-right: 10%;
+    background: gainsboro;
+    cursor: pointer;
+}
+.Product4 .Towimg .tow .card{
+    transition: all 0.5s;
+    padding-right: 2%;
+    background: gainsboro;
+}
+.Product4 .Towimg .one .card h5{
+    margin-top: 55%;
+    transition: all 0.5s;
+
+}
+.Product4 .Towimg .tow .card{
+    transition: all 0.5s;
+    background: gainsboro;
+    cursor: pointer;
+}
+.Product4 .Towimg .tow .card h5{
+    margin-top: 40%;
+    transition: all 0.5s;
+}
+
+.Product4 .Towimg .tow .ptow:hover img{
+    transform: scale(1.1);
+}
+
+.Product4 .Towimg .tow .ptow{
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+}
+.Product4 .Towimg .tow .ptow2{
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+}
+.Product4 .Towimg .tow .ptow .card:hover h5{
+    margin-top: 30%;
+}
+.Product4 .Towimg .tow .ptow2 .card:hover h5{
+    margin-top: 30%;
+}
+
+
+.Product4 .Towimg .tow .ptow2:hover img{
+    transform: scale(1.1);
+}
+.Product3{
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.Product5{
+    width: 100%;
+    padding: 2% 2%;
+    border-radius:10px;
+    
+}
+.Product5 .img{
+    width: 100%;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+.Product5 .img img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Product6{
+    width: 100%;
+    padding: 2% 2%;
+}
+.Product6 .section6{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.Product6 .section6 .box{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Product6 .section6 .box{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.Product6 .section6 .box img{
+    transition: all 0.5s;
+}
+.Product6 .section6 .box img:hover{
+    transform: scale(1.2);
+}
+
+
+.Product7 .Arsal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    font-family: myFont;
+}
+.Product7 .Arsal .arsal{
+    display: flex;
+    text-align: right;
+    
+    width: 22%;
+    text-align: right;
+}
+
+.Product7 .Arsal .arsal .ars{
+    padding: 2% 2%;
+    margin-left: 10%;
+    padding-right: 4%;
+    
+    
+    
+}
+
+.Product7 .Arsal .arsal h1{
+    font-size: 19px;
+    font-family: myFont;
+}
+.Product7 .Arsal .arsal p{
+    font-size: 13px;
+    font-family: myFont;
+}
+.Product7 .Arsal .arsal i{
+    font-size: 28px;
+    margin-top: 7%;
+    color: #ffc34d;
+    
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right , rgb(37, 37, 37) , rgb(90, 90, 90) , rgb(73, 69, 69));
+    color: rgb(74, 202, 159);
+    padding: 5% 5%;
+    
+}
+
+footer .footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 4%;
+}
+footer .footer .boxes h1{
+    font-size: 1.5rem;
+} 
+
+.footer .boxes a{
+    display: block;
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 19px;
+    transition: all 0.3s;
+}
+.footer .boxes a:hover{
+    color: rgb(196, 193, 39);
+}
+footer .telegram{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2%;
+}
+footer .telegram span{
+    background: white;
+    border-radius: 50%;
+    margin: 0 1%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0.8% 1%;
+}
+footer .telegram span i{
+    font-size: 22px;
+}
+
+footer .telegram span:hover{
+    background: rgb(39, 38, 38);
+    color: white;
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width: 840px) {
+
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        height: 6vh;
+        padding: 0 5%;
+        transition: all 1s;
+        z-index: 30;
+        font-family: Fresca;
+        position: relative;
+    }
+    .menu{
+        display: block;
+        z-index: 50;
+        position: absolute;
+        right: 7%;
+        top: 16%;
+        font-size: 1.5rem;
+    }
+
+    header .logo{
+        width: 14.5%;
+        border-radius: 50%;
+        margin-top: -2%;
+        position: absolute;
+        left: 7%;
+        
+        padding: 2% 2%;
+    }
+    
+    header .logo img{
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    header nav{
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 0;
+        height: 100vh;
+        justify-content: unset;
+        background:gainsboro;
+        position: absolute;
+        right: 0;
+        z-index: 20;
+        top: 100%;
+       display: none;
+    }
+    nav ul{
+        width: 100%;
+        margin-top: 1.6%;
+    }
+    header nav ul li{
+        text-align: right;
+        display: block;
+        color: gray;
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 4% 10%;
+    }
+    header nav ul li a{
+        color: rgb(119, 116, 116);
+        
+        margin: 0 0%;
+        font-size: 18px;
+    }
+
+
+    .search{
+        width: 95%;
+        display: flex;
+        margin: 7% auto;
+        border: 1px solid white;
+    }
+    .search input{
+        width: 80%;
+        padding: 0 2%;
+        font-size: 17px;
+        color: gray;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: white;
+        margin: 0 auto;
+    }
+    .search button{
+        width: 17%;
+        padding: 3% 6%;
+        border: 0;
+        background: black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .search button i{
+        color: gainsboro;
+    }
+
+    .slider{
+        width: 100%;
+        font-family: Fresca;
+    }
+    .slider #carouselExampleCaptions img{
+       height: 100%;
+    }
+
+
+
+
+.product{
+    width: 95%;
+    height: 100%;
+    padding: 4% 0;
+    border: 1px solid gainsboro;
+    margin: 2% auto;
+    border-radius: 10px;
+    font-family: Fresca;
+}
+.product .card{
+    border-radius: 10px;
+    padding: 0 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.product .card img{
+    transition: all 0.5s;
+}
+/* #myTab{
+    display: none;
+}
+.menu2{
+    
+} */
+
+
+.Product1{
+    width: 90%;
+    margin: 4% auto;
+    border: 1px solid gainsboro;    
+    padding: 1% 0;
+    
+}
+.product1{
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+    border: 1px solid gainsboro;
+    width: 95%;
+    margin: 4% auto;
+    border-radius: 10px;
+}
+.tab-pane{
+    width: 100%;
+    padding: 5% 10%;
+
+}
+
+/* .tab-pane{
+    display: block;
+} */
+#myTab li button{
+    display: block;
+}
+.tab-content{
+    /* box-shadow: 10px 5px 10px; */
+}
+.tab-pane img{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.2) , 10px 5px 10px rgba(0,0,0,0.3) ,5px 5px 10px rgba(0,0,0,0.2) ;
+    display: inline;
+}
+
+
+.Product4{
+    height: 100%;
+    padding: 0 0;
+    width: 95%;
+    margin: 2% auto;
+    border: 1px solid gainsboro;
+    padding-bottom: 2%;
+    border-radius: 10px
+}
+.Product4 .Towimg .one{
+    width: 58%;
+    overflow: hidden;
+    background: gainsboro;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-top: 7%;
+}
+.Product4 .Towimg .tow{
+    overflow: hidden;
+    width: 40%;
+    
+}
+.Product4 .Towimg .one img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.Product4 .Towimg .tow img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.Product4 .Towimg .one:hover img{
+   transform: scale(1.1);
+} 
+.Product4 .Towimg .one .card:hover h5{
+    margin-top: 0;
+    
+}
+.Product4 .Towimg .one .card{
+    transition: all 0.5s;
+    padding-right: 0;
+    background: gainsboro;
+    cursor: pointer;
+}
+.Product4 .Towimg .tow .card{
+    transition: all 0.5s;
+    padding-right: 0;
+    background: gainsboro;
+}
+.Product4 .Towimg .one .card h5{
+    margin-top: 65%;
+    transition: all 0.5s;
+    font-size: 15px;
+    color: black;
+
+}
+.Product4 .Towimg .one .card p{
+    font-size: 12px;
+}
+.Product4 .Towimg .tow .card{
+    transition: all 0.5s;
+    background: gainsboro;
+    cursor: pointer;
+}
+.Product4 .Towimg .tow .card h5{
+    margin-top: 60%;
+    transition: all 0.5s;
+    font-size: 14px;
+}
+
+.Product4 .Towimg .tow .ptow:hover img{
+    transform: scale(1.1);
+}
+
+.Product4 .Towimg .tow .ptow{
+    
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+    font-size: 10px;
+    
+}
+.Product4 .Towimg .tow .ptow2{
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+    font-size: 10px;
+}
+.Product4 .Towimg .tow .ptow .card:hover h5{
+    margin-top: 0;
+}
+.Product4 .Towimg .tow .ptow2 .card:hover h5{
+    margin-top: 0;
+}
+
+
+.Product4 .Towimg .tow .ptow2:hover img{
+    transform: scale(1.1);
+}
+
+.Product6{
+    width: 100%;
+    padding: 2% 2%;
+}
+.Product6 .section6{
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: unset;
+    justify-items: center;
+}
+.Product6 .section6 .box{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2% 0;
+    padding: 2% 2%;
+}
+
+.Product6 .section6 .box .card{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Product6 .section6 .box{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.Product6 .section6 .box img{
+    transition: all 0.5s;
+}
+.Product6 .section6 .box img:hover{
+    transform: scale(1.2);
+}
+
+.Product7 .Arsal{
+    
+    padding: 5% 3%;
+    
+    font-family: myFont;
+}
+.Product7 .Arsal .arsal{
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    width: 26%;
+    text-align: right;
+   
+}
+
+.ars p{
+    display: none;
+}
+
+.Product7 .Arsal .arsal .ars{
+    padding: 0 5%;
+    
+    margin-top: 2%;
+    
+    
+    
+}
+
+.Product7 .Arsal .arsal h1{
+    font-size: 8px;
+    font-family: myFont;
+    margin: 0 0;
+}
+
+.Product7 .Arsal .arsal i{
+    font-size: 15px;
+    margin-top: 0;
+    color: #ffc34d;
+    
+}
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right , rgb(37, 37, 37) , rgb(90, 90, 90) , rgb(73, 69, 69));
+    color: rgb(74, 202, 159);
+    padding: 5% 5%;
+    
+}
+
+footer .footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 4%;
+}
+footer .footer .boxes h1{
+    font-size: 1.2rem;
+} 
+
+.footer .boxes a{
+    display: block;
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+.footer .boxes a:hover{
+    color: rgb(196, 193, 39);
+}
+footer .telegram{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2%;
+}
+footer .telegram span{
+    background: white;
+    border-radius: 50%;
+    margin: 2% 1%;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 2% 2.3%;
+    text-align: center;
+}
+footer .telegram span i{
+    font-size: 18px;
+}
+
+footer .telegram span:hover{
+    background: rgb(39, 38, 38);
+    color: white;
+    cursor: pointer;
+}
+}
